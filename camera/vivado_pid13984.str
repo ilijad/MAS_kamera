@@ -1,0 +1,3005 @@
+/*
+
+Xilinx Vivado v2018.2.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2348494 on Mon Oct  1 18:25:44 MDT 2018
+IP Build: 2318053 on Mon Oct  1 21:44:26 MDT 2018
+
+Process ID: 13984
+License: Customer
+
+Current time: 	Wed Dec 19 01:31:14 CET 2018
+Time zone: 	Central European Time (Europe/Belgrade)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 44 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Ilija
+User home directory: C:/Users/Ilija
+User working directory: C:/Programiranje/ProgramiMAS/Projekt/camera
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Ilija/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Ilija/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Ilija/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Programiranje/ProgramiMAS/Projekt/camera/vivado.log
+Vivado journal file location: 	C:/Programiranje/ProgramiMAS/Projekt/camera/vivado.jou
+Engine tmp dir: 	C:/Programiranje/ProgramiMAS/Projekt/camera/.Xil/Vivado-13984-DESKTOP-Q3V08CI
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	184 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 496 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 56 MB (+56750kb) [00:00:16]
+// [Engine Memory]: 474 MB (+345328kb) [00:00:16]
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Programiranje\ProgramiMAS\Projekt\camera\camera.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Programiranje/ProgramiMAS/Projekt/camera/camera.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 517 MB. GUI used memory: 38 MB. Current time: 12/19/18 1:31:16 AM CET
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 517 MB (+20386kb) [00:00:20]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 579 MB (+37694kb) [00:00:33]
+// [GUI Memory]: 66 MB (+7160kb) [00:00:39]
+// [Engine Memory]: 614 MB (+6219kb) [00:00:40]
+// Tcl Message: open_project C:/Programiranje/ProgramiMAS/Projekt/camera/camera.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 49 MB. Current time: 12/19/18 1:31:38 AM CET
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 809.973 ; gain = 107.313 
+// Project name: camera; location: C:/Programiranje/ProgramiMAS/Projekt/camera; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 43 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (ck): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// 'm' command handler elapsed time: 3 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Export Hardware"); // X (ck)
+// Tcl Message: file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (ck): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+// [GUI Memory]: 72 MB (+2581kb) [00:01:40]
+dismissDialog("Launch SDK"); // aa (ck)
+// Tcl Message: launch_sdk -workspace C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk -hwspec C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk -hwspec C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 640 MB. GUI used memory: 45 MB. Current time: 12/19/18 1:32:37 AM CET
+// [GUI Memory]: 76 MB (+261kb) [00:03:21]
+// [GUI Memory]: 80 MB (+117kb) [00:05:21]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1039 ms. Increasing delay to 3000 ms.
+// Elapsed time: 275 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1 Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// [Engine Memory]: 653 MB (+9440kb) [00:06:30]
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <design_1> from BD file <C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 691 MB. GUI used memory: 45 MB. Current time: 12/19/18 1:37:32 AM CET
+// [Engine Memory]: 697 MB (+11188kb) [00:06:39]
+// [Engine Memory]: 753 MB (+22107kb) [00:06:49]
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 753 MB. GUI used memory: 49 MB. Current time: 12/19/18 1:37:50 AM CET
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 933.219 ; gain = 99.465 
+// 'bA' command handler elapsed time: 39 seconds
+// Elapsed time: 39 seconds
+dismissDialog("Open Block Design"); // bx (ck)
+// [GUI Memory]: 85 MB (+775kb) [00:07:14]
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// Elapsed time: 27 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// [GUI Memory]: 92 MB (+3014kb) [00:10:52]
+// [GUI Memory]: 96 MB (+18kb) [00:13:28]
+// [GUI Memory]: 101 MB (+205kb) [00:13:53]
+// HMemoryUtils.trashcanNow. Engine heap size: 785 MB. GUI used memory: 52 MB. Current time: 12/19/18 1:45:22 AM CET
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Elapsed time: 806 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, ck)
+// PAPropertyPanels.initPanels (board.xdc) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, board.xdc]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, board.xdc]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("board.xdc", 725, 247); // ce (w, ck)
+typeControlKey((HResource) null, "board.xdc", 'c'); // ce (w, ck)
+// [Engine Memory]: 791 MB (+218kb) [00:21:13]
+// Elapsed time: 63 seconds
+selectCodeEditor("board.xdc", 367, 128); // ce (w, ck)
+typeControlKey((HResource) null, "board.xdc", 'c'); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("board.xdc", 744, 413); // ce (w, ck)
+typeControlKey((HResource) null, "board.xdc", 'c'); // ce (w, ck)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1756ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3255 ms. Increasing delay to 3000 ms.
+// Elapsed time: 433 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// PAPropertyPanels.initPanels (processing_system7_0) elapsed time: 0.4s
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (ck):  Re-customize IP : addNotify
+// r (ck): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+// Elapsed time: 28 seconds
+dismissDialog("Re-customize IP"); // O (ck)
+selectButton("Clock Configuration", "Clock Configuration"); // k (ch, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // A (O, r)
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // A (O, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // A (O, r)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "FCLK_CLK0 ; IO PLL ; 100 ; 100.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks", 3, "100", 2, false); // A (O, r)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "FCLK_CLK0 ; IO PLL ; 100 ; 100.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks", 3, "100", 2, false); // A (O, r)
+setText("PCW FPGA0 PERIPHERAL FREQMHZ", "10"); // z (aZ)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "FCLK_CLK2 ; IO PLL ; 50 ; 10.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks", 5, "50", 2, false); // A (O, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {10}] [get_bd_cells processing_system7_0]'
+// r (ck): Re-customize IP: addNotify
+// bx (r):  Customize IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {10}] [get_bd_cells processing_system7_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bx (r)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// PAPropertyPanels.initPanels (XCLK) elapsed time: 0.3s
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (ck):  Re-customize IP : addNotify
+// r (ck): Re-customize IP: addNotify
+// Elapsed time: 758 seconds
+dismissDialog("Re-customize IP"); // O (ck)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // aY (C, r)
+dismissDialog("Re-customize IP"); // r (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 791 MB. GUI used memory: 77 MB. Current time: 12/19/18 2:15:25 AM CET
+// [GUI Memory]: 107 MB (+539kb) [00:51:42]
+// [GUI Memory]: 113 MB (+622kb) [01:04:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 791 MB. GUI used memory: 74 MB. Current time: 12/19/18 2:45:29 AM CET
+// [GUI Memory]: 119 MB (+735kb) [01:19:53]
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking 426ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 8193 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9391 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 791 MB. GUI used memory: 73 MB. Current time: 12/19/18 10:00:24 AM CET
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5958 ms. Increasing delay to 4000 ms.
+// WARNING: updateGUI() is taking  2959 ms.
+// Elapsed time: 29608 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, board.xdc]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, board.xdc]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, ck)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_gpio_1 ; S_AXI ; Reg ; 0x4121_0000 ; 64K ; 0x4121_FFFF", 3, "0x4121_0000", 3, false); // g (O, ck)
+// [GUI Memory]: 126 MB (+975kb) [08:58:14]
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_gpio_1 ; S_AXI ; Reg ; 0x4121_0000 ; 64K ; 0x4121_FFFF", 3, "axi_gpio_1", 0, false); // g (O, ck)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_gpio_1 ; S_AXI ; Reg ; 0x4121_0000 ; 64K ; 0x4121_FFFF", 3, "0x4121_0000", 3, false); // g (O, ck)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_gpio_1 ; S_AXI ; Reg ; 0x4121_0000 ; 64K ; 0x4121_FFFF", 3, "0x4121_FFFF", 5, false); // g (O, ck)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 10 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (ck): Re-customize IP: addNotify
+// Elapsed time: 13 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // aY (C, r)
+dismissDialog("Re-customize IP"); // r (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// HMemoryUtils.trashcanNow. Engine heap size: 791 MB. GUI used memory: 76 MB. Current time: 12/19/18 10:30:21 AM CET
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (ck):  Re-customize IP : addNotify
+// r (ck): Re-customize IP: addNotify
+// Elapsed time: 409 seconds
+dismissDialog("Re-customize IP"); // O (ck)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cJ (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cJ (C, r)
+setText("CLKOUT1 REQUESTED OUT FREQ", "8", true); // z (cK, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+// Tcl Command: 'set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {8} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {38.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {118.750} CONFIG.CLKOUT1_JITTER {365.761} CONFIG.CLKOUT1_PHASE_ERROR {242.819}] [get_bd_cells clk_wiz_0]'
+// r (ck): Re-customize IP: addNotify
+// bx (r):  Customize IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {8} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {38.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {118.750} CONFIG.CLKOUT1_JITTER {365.761} CONFIG.CLKOUT1_PHASE_ERROR {242.819}] [get_bd_cells clk_wiz_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bx (r)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd>  
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Save Constraints"); // bx (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cv' command handler elapsed time: 5 seconds
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RSB_SCRIPT_TASK
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /XCLK(25000000) and /clk_wiz_0/clk_out1(8000000) ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd  ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.  
+// aP (ck): Launch Run Critical Messages: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Elapsed time: 22 seconds
+dismissDialog("Launch Run Critical Messages"); // aP (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (ck):  Re-customize IP : addNotify
+// r (ck): Re-customize IP: addNotify
+// [GUI Memory]: 143 MB (+10618kb) [09:07:02]
+dismissDialog("Re-customize IP"); // O (ck)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cJ (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cJ (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cJ (C, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+// Tcl Message: startgroup 
+// Tcl Message: endgroup 
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "board.xdc", 2); // k (j, ck)
+selectCodeEditor("board.xdc", 1, 127); // ce (w, ck)
+selectCodeEditor("board.xdc", 8, 127); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "validate_bd_design_rsb"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// bx (ck):  Validate Design : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /XCLK(25000000) and /clk_wiz_0/clk_out1(8000000) 
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+// dL (ck): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (dL)
+dismissDialog("Critical Messages"); // dL (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1] [get_bd_ports XCLK] 
+// PAPropertyPanels.initPanels (clk_out1) elapsed time: 0.2s
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1028, 220, 1251, 596, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins clk_wiz_0/clk_out1] 
+// Tcl Message: endgroup 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// [GUI Memory]: 151 MB (+1763kb) [09:08:07]
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Elapsed time: 11 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "XCLK", true); // X (Q, ck)
+// Tcl Command: 'set_property name XCLK [get_bd_ports clk_out1_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name XCLK [get_bd_ports clk_out1_0] 
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "validate_bd_design_rsb"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Validate Design : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+dismissDialog("Validate Design"); // bx (ck)
+selectButton("PAResourceTtoZ.ValidateRSBDesign_VALIDATION_SUCCESSFUL_THERE_NO_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (ck): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// Tcl Message: generate_target all [get_files  C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : <C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: VHDL Output written to : C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// HMemoryUtils.trashcanNow. Engine heap size: 794 MB. GUI used memory: 147 MB. Current time: 12/19/18 10:39:29 AM CET
+// [Engine Memory]: 840 MB (+10615kb) [09:08:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 856 MB. GUI used memory: 106 MB. Current time: 12/19/18 10:39:45 AM CET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 1330.090 ; gain = 150.023 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// [Engine Memory]: 885 MB (+2374kb) [09:09:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 885 MB. GUI used memory: 100 MB. Current time: 12/19/18 10:40:35 AM CET
+// TclEventType: FILE_SET_CHANGE
+// 'bn' command handler elapsed time: 83 seconds
+// Elapsed time: 82 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 467ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, design_1, General Messages, [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at D:/Xilinx/Vivado/2018.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available. ]", 2, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, design_1, General Messages, [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'. ]", 3, false); // ah (O, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Resetting Runs"); // bx (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Dec 19 10:40:50 2018] Launched synth_1... Run output will be captured here: C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/synth_1/runme.log [Wed Dec 19 10:40:50 2018] Launched impl_1... Run output will be captured here: C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 404ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 456ms to process. Increasing delay to 3000 ms.
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 456 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Elapsed time: 15 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (ck): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// 'm' command handler elapsed time: 3 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Export Hardware"); // X (ck)
+// Tcl Message: file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf  
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Elapsed time: 1144 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "board.xdc", 2); // k (j, ck)
+// [GUI Memory]: 163 MB (+4589kb) [09:39:02]
+// [GUI Memory]: 172 MB (+679kb) [09:39:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 901 MB. GUI used memory: 104 MB. Current time: 12/19/18 11:10:35 AM CET
+// Elapsed time: 1351 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "board.xdc", 2); // k (j, ck)
+// Elapsed time: 59 seconds
+selectCodeEditor("board.xdc", 243, 311); // ce (w, ck)
+selectCodeEditor("board.xdc", 222, 317); // ce (w, ck)
+typeControlKey((HResource) null, "board.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("board.xdc", 269, 317); // ce (w, ck)
+selectCodeEditor("board.xdc", 247, 326); // ce (w, ck)
+typeControlKey((HResource) null, "board.xdc", 'v'); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (ck): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// 'bn' command handler elapsed time: 4 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OF_OUTPUT_PRODUCTS_DID_NOT_OK", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Dec 19 11:32:16 2018] Launched synth_1... Run output will be captured here: C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/synth_1/runme.log [Wed Dec 19 11:32:16 2018] Launched impl_1... Run output will be captured here: C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 337ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 901 MB. GUI used memory: 103 MB. Current time: 12/19/18 11:40:37 AM CET
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 2199ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 511 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (ck): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// 'm' command handler elapsed time: 3 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Export Hardware"); // X (ck)
+// Tcl Message: file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf  
+// Elapsed time: 557 seconds
+selectCodeEditor("board.xdc", 261, 329); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("board.xdc", 35, 331); // ce (w, ck)
+selectCodeEditor("board.xdc", 243, 314); // ce (w, ck)
+typeControlKey((HResource) null, "board.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("board.xdc", 22, 331); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 39 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_aclk. ]", 3); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_aclk. , [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_resetn. ]", 4, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_aclk. , [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_resetn. ]", 4, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_aclk. , [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_resetn. ]", 4, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_aclk. , [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_resetn. ]", 4, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_aclk. ]", 3, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_aclk. ]", 3, true, false, false, false, true, false); // ah (O, ck) - Popup Trigger - Node
+// Elapsed time: 69 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "validate_bd_design_rsb"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// 'dJ' command handler elapsed time: 5 seconds
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design cdc_sync__parameterized1 has unconnected port prmry_aclk. ]", 3); // ah (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (ck): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OF_OUTPUT_PRODUCTS_DID_NOT_OK", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Dec 19 11:52:46 2018] Launched synth_1... Run output will be captured here: C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/synth_1/runme.log [Wed Dec 19 11:52:46 2018] Launched impl_1... Run output will be captured here: C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 264ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 407 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (ck): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// 'm' command handler elapsed time: 10 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Export Hardware"); // X (ck)
+// Tcl Message: file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf  
+// Elapsed time: 504 seconds
+selectCodeEditor("board.xdc", 720, 205); // ce (w, ck)
+selectCodeEditor("board.xdc", 571, 245); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e (ck):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 663ms to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,005 MB. GUI used memory: 104 MB. Current time: 12/19/18 12:09:17 PM CET
+// [Engine Memory]: 1,097 MB (+176061kb) [10:38:23]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,143 MB. GUI used memory: 105 MB. Current time: 12/19/18 12:09:40 PM CET
+// [Engine Memory]: 1,176 MB (+25854kb) [10:38:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,562 MB. GUI used memory: 105 MB. Current time: 12/19/18 12:09:55 PM CET
+// [Engine Memory]: 1,562 MB (+342394kb) [10:39:01]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,565 MB. GUI used memory: 105 MB. Current time: 12/19/18 12:09:59 PM CET
+// Xgd.load filename: D:/Xilinx/Vivado/2018.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_floorplan.xgd elapsed time: 0.6s
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: D:/Xilinx/Vivado/2018.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 1.3s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 4.2s
+// [Engine Memory]: 1,671 MB (+32364kb) [10:39:13]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2.2 INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [c:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2056.711 ; gain = 554.672 
+// Tcl Message: Finished Parsing XDC File [C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/const/board.xdc] Parsing XDC File [c:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_late.xdc] for cell 'design_1_i/clk_wiz_0/inst' Finished Parsing XDC File [c:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_late.xdc] for cell 'design_1_i/clk_wiz_0/inst' 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 17 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 17 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:00:51 ; elapsed = 00:01:07 . Memory (MB): peak = 2068.781 ; gain = 696.043 
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim/design_1_wrapper_func_synth.vhd" 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim/design_1_wrapper_func_synth.vhd INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' 
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' 
+// Tcl Message: "xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj design_1_wrapper_vlog.prj" 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 136 MB. Current time: 12/19/18 12:10:26 PM CET
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl "xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-307] analyzing entity axi_protocol_converter_v2_1_17_axi_protocol_converter INFO: [VRFC 10-307] analyzing entity design_1_axi_gpio_0_0 INFO: [VRFC 10-307] analyzing entity design_1_axi_gpio_1_0 INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0 INFO: [VRFC 10-307] analyzing entity s00_couplers_imp_UYSKKA INFO: [VRFC 10-307] analyzing entity design_1_ps7_0_axi_periph_0 INFO: [VRFC 10-307] analyzing entity design_1 INFO: [VRFC 10-307] analyzing entity design_1_wrapper 
+// Tcl Message: run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 2076.148 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '17' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' 
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cd3dc53e751d4cc28490f63dc1d5f239 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L secureip --snapshot design_1_wrapper_func_synth xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. 
+// Tcl Message: Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis Completed simulation data flow analysis 
+// Tcl Message: Built simulation snapshot design_1_wrapper_func_synth 
+// Tcl Message:  ****** Webtalk v2018.2.2 (64-bit)   **** SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018   **** IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim/xsim.dir/design_1_wrapper_func_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim/xsim.dir/design_1_wrapper_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Dec 19 12:11:32 2018. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Wed Dec 19 12:11:32 2018... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:52 . Memory (MB): peak = 2076.148 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '52' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "design_1_wrapper_func_synth -key {Post-Synthesis:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Tcl Message: source design_1_wrapper.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,727 MB. GUI used memory: 141 MB. Current time: 12/19/18 12:11:40 PM CET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: Note: Warning on instance :design_1_wrapper:design_1_i:processing_system7_0:inst:PS7_i: The Zynq-7000 All Programmable SoC does not have a simulation model. Behavioral simulation of Zynq-7000 (e.g. Zynq PS7 block) is not supported in any simulator. Please use the AXI BFM simulation model to verify the AXI transactions Time: 0 ps  Iteration: 0  Process: /design_1_wrapper/design_1_i/processing_system7_0/inst/PS7_i/line__663  File: D:\Xilinx\Vivado\2018.2\data/vhdl/src/unisims/primitive/PS7.vhd xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2239.625 ; gain = 163.477 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:01:17 ; elapsed = 00:02:37 . Memory (MB): peak = 2239.645 ; gain = 866.906 
+// 'd' command handler elapsed time: 158 seconds
+// a (ck): Critical Messages: addNotify
+// Elapsed time: 158 seconds
+dismissDialog("Run Simulation"); // e (ck)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Common 17-55] 'set_property' expects at least one object. [C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/const/board.xdc:27]. Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.", 0); // b (D, a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Common 17-55] 'set_property' expects at least one object. [C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/const/board.xdc:27]. Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.", 0, false, false, false, false, true); // b (D, a) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/const/board.xdc:27]. ]", 2, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Programiranje\ProgramiMAS\Projekt\camera\camera.srcs\const\board.xdc;-;;-;16;-;line;-;27;-;;-;16;-;"); // ah (O, ck)
+// PAPropertyPanels.initPanels (board.xdc) elapsed time: 0.2s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // k (j, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 143 MB. Current time: 12/19/18 12:11:57 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 144 MB. Current time: 12/19/18 12:11:58 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 142 MB. Current time: 12/19/18 12:11:59 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 142 MB. Current time: 12/19/18 12:11:59 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 141 MB. Current time: 12/19/18 12:12:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 142 MB. Current time: 12/19/18 12:12:01 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 142 MB. Current time: 12/19/18 12:12:02 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 141 MB. Current time: 12/19/18 12:12:04 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 146 MB. Current time: 12/19/18 12:12:04 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 141 MB. Current time: 12/19/18 12:12:05 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 141 MB. Current time: 12/19/18 12:12:05 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 143 MB. Current time: 12/19/18 12:12:05 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 142 MB. Current time: 12/19/18 12:12:05 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,735 MB. GUI used memory: 142 MB. Current time: 12/19/18 12:12:06 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 18 seconds
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, ck)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "btns_4bits_tri_i[3:0] ; U ; Array", 13, "btns_4bits_tri_i[3:0]", 0, true); // m (c, ck) - Node
+// [GUI Memory]: 185 MB (+3988kb) [10:41:21]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "btns_4bits_tri_i[3:0] ; U ; Array", 13, "btns_4bits_tri_i[3:0]", 0, true); // m (c, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bx (ck)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (ck):  Re-customize IP : addNotify
+// r (ck): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (ck)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // aY (C, r)
+selectCheckBox((HResource) null, "All Inputs", true); // g (m, r): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+// Tcl Command: 'set_property -dict [list CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_1]'
+// r (ck): Re-customize IP: addNotify
+// bx (r):  Customize IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bx (r)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (ck): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// 'bn' command handler elapsed time: 4 seconds
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// HMemoryUtils.trashcanNow. Engine heap size: 1,756 MB. GUI used memory: 147 MB. Current time: 12/19/18 12:13:51 PM CET
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// [Engine Memory]: 1,757 MB (+3517kb) [10:42:56]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M . INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2279.793 ; gain = 34.773 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 28 seconds
+dismissDialog("Managing Output Products"); // bx (ck)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "board.xdc", 2); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 20, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// 'Q' command handler elapsed time: 3 seconds
+dismissDialog("Open Hardware Manager"); // bx (ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 20); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 20); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 19, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// [GUI Memory]: 194 MB (+533kb) [10:43:52]
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Dec 19 12:14:49 2018] Launched synth_1... Run output will be captured here: C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/synth_1/runme.log [Wed Dec 19 12:14:49 2018] Launched impl_1... Run output will be captured here: C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 151 MB. Current time: 12/19/18 12:43:53 PM CET
+// Elapsed time: 1769 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// aI (ck): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+dismissDialog("Feedback Request"); // aI (ck)
+selectButton("PAResourceTtoZ.TouchpointSurveyDialog_USE_TOOLS_OPTIONS_WINDOWS_BEHAVIOR_OK", "OK"); // JButton (A, G)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// 'd' command handler elapsed time: 15 seconds
+// Elapsed time: 17 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_SIMULATION_WAVEFORM, "Simulation Waveform"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (ck): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// 'm' command handler elapsed time: 5 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Export Hardware"); // X (ck)
+// Tcl Message: file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.SimulationRun_DESIGN_STALE_AND_NEEDS_TOBE_CLOSED_OK", "OK"); // JButton (A, G)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (ck):  Run Simulation : addNotify
+// Elapsed time: 22 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 2285.656 ; gain = 0.000 
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 144 MB. Current time: 12/19/18 12:45:39 PM CET
+// Engine heap size: 1,806 MB. GUI used memory: 144 MB. Current time: 12/19/18 12:45:39 PM CET
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2285.656 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 117 MB. Current time: 12/19/18 12:45:56 PM CET
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: D:/Xilinx/Vivado/2018.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.9s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.5s
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (design_1_wrapper.vhd) elapsed time: 0.2s
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [c:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 6 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 6 instances  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2361.773 ; gain = 76.117 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim/design_1_wrapper_func_synth.vhd" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim/design_1_wrapper_func_synth.vhd INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' 
+// Tcl Message: "xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj design_1_wrapper_vlog.prj" 
+// Tcl Message: "xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2361.773 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '14' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' 
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cd3dc53e751d4cc28490f63dc1d5f239 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L secureip --snapshot design_1_wrapper_func_synth xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. 
+// Tcl Message: Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...] Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...] Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110000111101001111...] Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01011101010111010101...] Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111010111110100011...] 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot design_1_wrapper_func_synth 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:45 . Memory (MB): peak = 2361.773 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '44' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sim/sim_1/synth/func/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "design_1_wrapper_func_synth -key {Post-Synthesis:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// PAPropertyPanels.initPanels (design_1_wrapper.vhd) elapsed time: 0.2s
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 153 MB. Current time: 12/19/18 12:47:06 PM CET
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: source design_1_wrapper.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: Note: Warning on instance :design_1_wrapper:design_1_i:processing_system7_0:inst:PS7_i: The Zynq-7000 All Programmable SoC does not have a simulation model. Behavioral simulation of Zynq-7000 (e.g. Zynq PS7 block) is not supported in any simulator. Please use the AXI BFM simulation model to verify the AXI transactions Time: 0 ps  Iteration: 0  Process: /design_1_wrapper/design_1_i/processing_system7_0/inst/PS7_i/line__663  File: D:\Xilinx\Vivado\2018.2\data/vhdl/src/unisims/primitive/PS7.vhd 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:28 ; elapsed = 00:01:22 . Memory (MB): peak = 2361.773 ; gain = 76.117 
+// 'd' command handler elapsed time: 114 seconds
+// Elapsed time: 89 seconds
+dismissDialog("Run Simulation"); // e (ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ck)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "camera_tri_i[10:0] ; UUU ; Array", 5, "camera_tri_i[10:0]", 0, true); // m (c, ck) - Node
+// [GUI Memory]: 205 MB (+878kb) [11:16:31]
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "[10] ; U ; Logic", 6, "U", 1, false); // m (c, ck)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "[10] ; U ; Logic", 6, "[10]", 0, false); // m (c, ck)
+expandTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "[10] ; U ; Logic", 6); // m (c, ck)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "[10] ; U ; Logic", 6, "[10]", 0, false, false, false, false, false, true); // m (c, ck) - Double Click
+// TclEventType: SIMULATION_OPEN_SOURCE
+// [GUI Memory]: 219 MB (+3624kb) [11:16:33]
+// [GUI Memory]: 235 MB (+5201kb) [11:16:33]
+selectTreeTableHeader(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Value", 1); // m (c, ck)
+selectTreeTableHeader(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Data Type", 1); // m (c, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 1); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:47:49 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, XCLK]", 12, false); // a (s, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:47:52 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 174, 352); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 155, 352); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:47:56 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:47:56 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:47:57 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:47:57 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:47:58 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:48:05 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:48:06 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:48:07 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:48:08 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:48:13 PM CET
+// Elapsed time: 21 seconds
+selectButton(RDIResource.WaveformView_GOTO_LAST_TIME, "Waveform Viewer_RunAll"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_NEXT_TRANSITION, "Waveform Viewer_waveformNextTransition"); // B (f, ck)
+selectButton(RDIResource.WaveformView_GOTO_LAST_TIME, "Waveform Viewer_RunAll"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_NEXT_TRANSITION, "Waveform Viewer_waveformNextTransition"); // B (f, ck)
+selectButton(RDIResource.WaveformView_PREVIOUS_TRANSITION, "Waveform Viewer_waveformPreviousTransition"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_PREVIOUS_TRANSITION, "Waveform Viewer_waveformPreviousTransition"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, sys_clock]", 5, false); // a (s, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 166 MB. Current time: 12/19/18 12:48:38 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 114, 105); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, XCLK]", 5, false); // a (s, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 167 MB. Current time: 12/19/18 12:48:45 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, XCLK]", 11, false, false, false, false, true, false); // a (s, ck) - Popup Trigger
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 611, 314); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 568, 167); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:48:55 PM CET
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, sys_clock]", 17, false); // a (s, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_NEXT_TRANSITION, "Waveform Viewer_waveformNextTransition"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:49:15 PM CET
+selectButton(RDIResource.WaveformView_NEXT_TRANSITION, "Waveform Viewer_waveformNextTransition"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:49:21 PM CET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 300, 394); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:49:23 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:49:27 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:49:28 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 164 MB. Current time: 12/19/18 12:49:33 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 13 seconds
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, camera_tri_i[10:0]]", 14); // a (s, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:49:39 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:49:40 PM CET
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, camera_tri_i[10:0]]", 8); // a (s, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, XCLK]", 6, false); // a (s, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:49:42 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 322, 185); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:49:45 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:49:46 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:49:46 PM CET
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_NEXT_TRANSITION, "Waveform Viewer_waveformNextTransition"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_NEXT_TRANSITION, "Waveform Viewer_waveformNextTransition"); // B (f, ck)
+selectButton(RDIResource.WaveformView_GOTO_LAST_TIME, "Waveform Viewer_RunAll"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_LAST_TIME, "Waveform Viewer_RunAll"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_ADD_MARKER, "Waveform Viewer_waveformAddMarker"); // B (f, ck)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 165 MB. Current time: 12/19/18 12:49:56 PM CET
+selectButton(RDIResource.WaveformView_GOTO_CURSOR, "Waveform Viewer_waveformgotocursor"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_GOTO_CURSOR, "Waveform Viewer_waveformgotocursor"); // B (f, ck)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 527, 164); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 14); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 14); // u (O, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 163 MB. Current time: 12/19/18 1:19:58 PM CET

@@ -148,13 +148,13 @@ struct regval_list {
 };
 
 struct regval_list ov7670_default_regs[] = {
-	//{ REG_COM7, COM7_RESET },
+	{ REG_COM7, COM7_RESET },
 /*
  * Clock scale: 3 = 15fps
  *              2 = 20fps
  *              1 = 30fps
  */
-	{ REG_CLKRC, 0x3f},	/* OV: clock scale (30 fps) */
+	{ REG_CLKRC, 0x2},	/* OV: clock scale (30 fps) */
 	{ REG_TSLB,  0x04 },	/* OV */
 	{ REG_COM7, 0 },	/* VGA */
 	/*
@@ -165,11 +165,11 @@ struct regval_list ov7670_default_regs[] = {
 	{ REG_HREF, 0xb6 },	{ REG_VSTART, 0x02 },
 	{ REG_VSTOP, 0x7a },	{ REG_VREF, 0x0a },
 
-	{ REG_COM3, 0x04 },	{ REG_COM14, 0x19 },
+	{ REG_COM3, 0 },	{ REG_COM14, 0 },
 	/* Mystery scaling numbers */
 	{ 0x70, 0x3a },		{ 0x71, 0x35 },
-	{ 0x72, 0x11 },		{ 0x73, 0xf1 },
-	{ 0xa2, 0x02 /**/ },		{ REG_COM10, 0x0 },
+	{ 0x72, 0x11 },		{ 0x73, 0xf0 },
+	{ 0xa2, 0x01 /**/ },		{ REG_COM10, 0x0 },
 
 	/* Gamma curve values */
 	{ 0x7a, 0x20 },		{ 0x7b, 0x10 },
@@ -221,7 +221,7 @@ struct regval_list ov7670_default_regs[] = {
 	{ 0x5b, 0x44 },		{ 0x5c, 0x67 },
 	{ 0x5d, 0x49 },		{ 0x5e, 0x0e },
 	{ 0x6c, 0x0a },		{ 0x6d, 0x55 },
-	{ 0x6e, 0x11 },		{ 0x6f, 0x9f }, /* "9e for advance AWB" */
+	{ 0x6e, 0x11 },		{ 0x6f, 0x9e }, /* "9e for advance AWB" */
 	{ 0x6a, 0x40 },		{ REG_BLUE, 0x40 },
 	{ REG_RED, 0x60 },
 	{ REG_COM8, COM8_FASTAEC|COM8_AECSTEP|COM8_BFILT|COM8_AGC|COM8_AEC|COM8_AWB },
@@ -245,7 +245,7 @@ struct regval_list ov7670_default_regs[] = {
 	{ 0x99, 0x30 },		{ 0x9a, 0x84 },
 	{ 0x9b, 0x29 },		{ 0x9c, 0x03 },
 	{ 0x9d, 0x4c },		{ 0x9e, 0x3f },
-	{ 0x78, 0x04 },		/*{ 0x1b, 0x04 }, /**/
+	{ 0x78, 0x04 },		/*{ 0x1b, 0x04 }, */
 
 	/* Extra-weird stuff.  Some sort of multiplexor register */
 	{ 0x79, 0x01 },		{ 0xc8, 0xf0 },
@@ -261,6 +261,7 @@ struct regval_list ov7670_default_regs[] = {
 	{ 0x79, 0x05 },		{ 0xc8, 0x30 },
 	{ 0x79, 0x26 },
 
+
 	{ 0xff, 0xff },	/* END MARKER */
 };
 
@@ -271,14 +272,14 @@ struct regval_list ov7670_fmt_yuv422[] = {
 	{ REG_RGB444, 0 },	/* No RGB444 please */
 	{ REG_COM1, 0 },	/* CCIR601 */
 	{ REG_COM15, COM15_R00FF },
-	{ REG_COM9, 0x48 }, /* 32x gain ceiling; 0x8 is reserved bit */
+	{ REG_COM9, 0x6A }, /* 32x gain ceiling; 0x8 is reserved bit */
 	{ 0x4f, 0x80 }, 	/* "matrix coefficient 1" */
 	{ 0x50, 0x80 }, 	/* "matrix coefficient 2" */
 	{ 0x51, 0    },		/* vb */
 	{ 0x52, 0x22 }, 	/* "matrix coefficient 4" */
 	{ 0x53, 0x5e }, 	/* "matrix coefficient 5" */
 	{ 0x54, 0x80 }, 	/* "matrix coefficient 6" */
-	{ REG_COM13, COM13_GAMMA|COM13_UVSAT },
+	{ REG_COM13, COM13_UVSAT },
 	{ 0xff, 0xff },
 };
 
@@ -310,7 +311,7 @@ struct regval_list ov7670_test_shift[] = {
 
 //SET TEST MODE: COLOR TEST BAR
 struct regval_list ov7670_test_bar[] = {
-	{ 0x70, 0x4A },	/* */
+	{ 0x70, 0x3A },	/* */
 	{ 0x71, 0xB5 },	/* */
 	{ 0xff, 0xff }
 };

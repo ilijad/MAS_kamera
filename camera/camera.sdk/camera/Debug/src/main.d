@@ -24,7 +24,8 @@ src/main.o src/main.o: ../src/main.c \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xsdps_hw.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/ff.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/integer.h \
- ../../standalone_bsp_0/ps7_cortexa9_0/include/ffconf.h
+ ../../standalone_bsp_0/ps7_cortexa9_0/include/ffconf.h \
+ ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_cache.h
 
 ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:
 
@@ -77,3 +78,5 @@ src/main.o src/main.o: ../src/main.c \
 ../../standalone_bsp_0/ps7_cortexa9_0/include/integer.h:
 
 ../../standalone_bsp_0/ps7_cortexa9_0/include/ffconf.h:
+
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_cache.h:

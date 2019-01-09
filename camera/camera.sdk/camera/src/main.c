@@ -24,9 +24,9 @@ int load_regs(struct regval_list *regs);
 static FIL fil;
 static FATFS fatfs;
 
-u8 camera_read[640*2*480] __attribute__ ((aligned(32)));
+u8 camera_read[5120*480] __attribute__ ((aligned(32)));
 
-static char FileName[32] = "a.yuv";
+static char FileName[32] = "photo.yuv";
 static char *SD_File;
 u32 Platform;
 
@@ -127,15 +127,13 @@ int init_camera()
 	}
 	usleep(100000);
 
-
-
 	status = I2C_read(0x1d, &id);
-		if (status == XST_SUCCESS) {
-			printf("%x ", id);
-		} else {
-			return XST_FAILURE;
-		}
-		usleep(100000);
+	if (status == XST_SUCCESS) {
+		printf("%x\n", id);
+	} else {
+		return XST_FAILURE;
+	}
+	usleep(100000);
 
 	status = I2C_write(0x12, 0x80);
 	if (status != XST_SUCCESS) {
@@ -143,35 +141,56 @@ int init_camera()
 	}
 	usleep(100000);
 
-	status = load_regs(ov7670_default_regs);
+	status = load_regs(a);
 	if (status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
 	usleep(100000);
 
-	status = load_regs(ov7670_fmt_yuv422);
-	if (status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-	usleep(100000);
-
-	status = I2C_read(0x11, &id);
-		if (status == XST_SUCCESS) {
-			printf("%x\n", id);
-		} else {
-			return XST_FAILURE;
-		}
-		usleep(100000);
+	 status = load_regs(ov7670_test_bar);
+	 if (status != XST_SUCCESS) {
+		 return XST_FAILURE;
+	 }
+	 usleep(100000);
 
 	return XST_SUCCESS;
+}
+
+void take_photo()
+{
+	u32 InputData;
+	UINT bytes_read;
+	int i = 0;
+	while (!(XGpio_DiscreteRead(&camera, 1) & 0x400)) {}
+	while ((XGpio_DiscreteRead(&camera, 1) & 0x400)) {}
+
+	while (1) {
+		while (!((InputData = XGpio_DiscreteRead(&camera, 1)) & 0x600)) {}
+		if ((InputData & 0x400)) break;
+
+		while (1) {
+			InputData = XGpio_DiscreteRead(&camera, 1);
+			if (!(InputData & 0x200))
+				break;
+			if (!(InputData & 0x100))
+				continue;
+			camera_read[i] = InputData & 0xff;
+			i++;
+
+			while ((XGpio_DiscreteRead(&camera, 1) & 0x100)) {
+			}
+		}
+	}
+	f_write(&fil, (const void *) camera_read, i, &bytes_read);
+	if(i != 2*640*480) printf("Failed!\n");
+	else printf("Image taken!\n");
+
+	return;
 }
 
 int main()
 {
 	int status;
-	u32 InputData;
-	int h = 0, i = 0, j = 0, k = 0;
-	//int ff[480];
 
 	status = init_gpio();
 	if (status != XST_SUCCESS) {
@@ -196,60 +215,19 @@ int main()
 
 	status = init_camera();
 	if (status != XST_SUCCESS) {
-		printf("SD card initialization failed.\n");
+		printf("Camera card initialization failed.\n");
 		return 0;
 	}
 	usleep(10000);
 
-	h = 0;
-
-	UINT bytes_read;
-
-	while (!(XGpio_DiscreteRead(&camera, 1) & 0x400)) {}
-	while ((XGpio_DiscreteRead(&camera, 1) & 0x400)) {}
-
-	while (1)
-	{
-		while (!((InputData = XGpio_DiscreteRead(&camera, 1)) & 0x600)) {}
-		if ((InputData & 0x400))
-						break;
-		k=0;
-		while (1)
-		{
-			InputData = XGpio_DiscreteRead(&camera, 1);
-			if (!(InputData & 0x200))
-				break;
-			if (!(InputData & 0x100))
-				continue;
-			h++;
-			camera_read[i] = InputData & 0xff;
-			i++;
-
-			k++;
-			while ((XGpio_DiscreteRead(&camera, 1) & 0x100)) {
-			}
-		}
-		//ff[j]=i;
-		j++;
-		//camera_read[i] = '\n';
-		//i++;
-		if(j%1==0)
-		{
-			bytes_read=0;
-			//f_write(&fil, (const void *) camera_read, i, &bytes_read);
-			//i = 0;
-
-		}
-	}
-	f_write(&fil, (const void *) camera_read, i, &bytes_read);
-	printf("%d\n", h);
+	take_photo();
 
 	status = f_close(&fil);
 	if (status) {
 		return XST_FAILURE;
 	}
 
-	printf("Testing Complete\n\r");
+	printf("Complete\n\r");
 
 	XGpio_DiscreteSet(&led_btns, 2, 0x00);
 

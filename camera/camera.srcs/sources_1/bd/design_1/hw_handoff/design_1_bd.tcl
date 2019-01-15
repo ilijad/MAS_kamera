@@ -166,7 +166,7 @@ proc create_root_design { parentCell } {
   # Create ports
   set XCLK [ create_bd_port -dir O -type clk XCLK ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {10000000} \
+   CONFIG.FREQ_HZ {24000000} \
  ] $XCLK
   set sys_clock [ create_bd_port -dir I -type clk sys_clock ]
   set_property -dict [ list \
@@ -200,9 +200,9 @@ proc create_root_design { parentCell } {
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
    CONFIG.CLKOUT1_DRIVES {BUFGCE} \
-   CONFIG.CLKOUT1_JITTER {197.700} \
-   CONFIG.CLKOUT1_PHASE_ERROR {96.948} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {10} \
+   CONFIG.CLKOUT1_JITTER {293.625} \
+   CONFIG.CLKOUT1_PHASE_ERROR {240.486} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {24} \
    CONFIG.CLKOUT2_DRIVES {BUFGCE} \
    CONFIG.CLKOUT3_DRIVES {BUFGCE} \
    CONFIG.CLKOUT4_DRIVES {BUFGCE} \
@@ -211,9 +211,9 @@ proc create_root_design { parentCell } {
    CONFIG.CLKOUT7_DRIVES {BUFGCE} \
    CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} \
    CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {100.000} \
-   CONFIG.MMCM_DIVCLK_DIVIDE {1} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {39.000} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.625} \
+   CONFIG.MMCM_DIVCLK_DIVIDE {5} \
    CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} \
    CONFIG.USE_BOARD_FLOW {true} \
    CONFIG.USE_LOCKED {false} \

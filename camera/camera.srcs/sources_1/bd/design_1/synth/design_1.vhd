@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
---Date        : Sun Dec 23 19:35:12 2018
+--Date        : Fri Jan 11 19:57:30 2019
 --Host        : DESKTOP-Q3V08CI running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1412,7 +1412,7 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
   attribute X_INTERFACE_INFO of XCLK : signal is "xilinx.com:signal:clock:1.0 CLK.XCLK CLK";
-  attribute X_INTERFACE_PARAMETER of XCLK : signal is "XIL_INTERFACENAME CLK.XCLK, CLK_DOMAIN design_1_clk_wiz_0_0_clk_out1, FREQ_HZ 10000000, PHASE 0.0";
+  attribute X_INTERFACE_PARAMETER of XCLK : signal is "XIL_INTERFACENAME CLK.XCLK, CLK_DOMAIN design_1_clk_wiz_0_0_clk_out1, FREQ_HZ 24000000, PHASE 0.0";
   attribute X_INTERFACE_INFO of iic_0_scl_i : signal is "xilinx.com:interface:iic:1.0 iic_0 SCL_I";
   attribute X_INTERFACE_INFO of iic_0_scl_o : signal is "xilinx.com:interface:iic:1.0 iic_0 SCL_O";
   attribute X_INTERFACE_INFO of iic_0_scl_t : signal is "xilinx.com:interface:iic:1.0 iic_0 SCL_T";

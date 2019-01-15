@@ -11,4 +11,7 @@
 ::jpeg_demo.exe  -i ..\..\test_encoder\green_bgr444_planar_253x175.yuv  -o  green_bgr444_planar_253x175.jpg     -w 253 -h 175 -q 95 -r 1 -v 1 -d 0 -f 12
 
 
-jpeg_demo.exe  -i photo.yuv -o  photo.jpg    -w 640 -h 480 -q 100 -r 1 -v 1 -d 0 -f 4
+jpeg_demo.exe  -i photo.yuv -o  photo.jpg    -w 640 -h 480 -q 100 -r 1 -v 1 -d 1 -f 6
+jpeg_demo.exe  -i photo.yuv -o  photo2.jpg    -w 640 -h 480 -q 100 -r 1 -v 1 -d 0 -f 7
+jpeg_demo.exe  -i photo.yuv -o  photo3.jpg    -w 640 -h 480 -q 100 -r 1 -v 1 -d 1 -f 11
+::jpeg_demo.exe  -i photo.yuv -o  photo4.jpg    -w 320 -h 240 -q 100 -r 1 -v 1 -d 0 -f 12

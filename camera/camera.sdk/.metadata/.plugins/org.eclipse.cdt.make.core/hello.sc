@@ -859,6 +859,7 @@
 </instance>
 <instance id="xilinx.gnu.armv7.exe.debug.359450072;xilinx.gnu.armv7.exe.debug.359450072.;xilinx.gnu.armv7.c.toolchain.compiler.debug.1779241468;xilinx.gnu.armv7.c.compiler.input.1697821323">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __ARM_FP16_FORMAT_IEEE" removed="true"/>
 <includePath path="#undef __ARM_FP16_FORMAT_ALTERNATIVE" removed="true"/>
 <includePath path="#undef __ARM_FP16_ARGS" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1'
+HD_PWD='C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

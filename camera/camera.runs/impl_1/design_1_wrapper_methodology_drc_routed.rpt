@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
-| Date         : Sun Dec 23 19:45:39 2018
+| Date         : Fri Jan 11 20:08:32 2019
 | Host         : DESKTOP-Q3V08CI running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -132,14 +132,14 @@ XDCH-2#1 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'iic_0_sda_io' relative to clock IIC_SCL_CLOCK for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock IIC_SCL_CLOCK -clock_fall -min 0.000 [get_ports iic_0_sda_io]
-C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/const/board.xdc (Line: 13)
+C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.srcs/const/board.xdc (Line: 13)
 Related violations: <none>
 
 XDCH-2#2 Warning
 Same min and max delay values on IO port  
 The same output delay of -1.000 ns has been defined on port 'iic_0_sda_io' relative to clock IIC_SCL_CLOCK for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock IIC_SCL_CLOCK -min -1.000 [get_ports iic_0_sda_io]
-C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/const/board.xdc (Line: 22)
+C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.srcs/const/board.xdc (Line: 22)
 Related violations: <none>
 
 

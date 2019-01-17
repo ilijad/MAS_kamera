@@ -3,30 +3,28 @@
 
 import socket
 import io
+from PIL import Image
+from subprocess import call
 import time
-#from PIL import Image
 
-#s = socket.socket()  # create a socket object
-TCP_IP = '192.168.1.10'
-host= TCP_IP
-port = 7
-TCP_PORT = 7
-BUFFER_SIZE = 2048
-MESSAGE = b"Hello,hfgjh World"
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket()  # create a socket object
+host = socket.gethostname()  # get local machine name
+port = 12345  # reserve a port for your service.
 
-s.connect((TCP_IP, TCP_PORT))
-s.send(MESSAGE)
+s.connect((host, port))
+s.send("test.jpg".encode())
 print("Sending...")
-f = open("photo.jpg","wb")  # stream instead of file
-imageChunk = s.recv(2048)
+f = open("enk", "wb")  # stream instead of file
+imageChunk = s.recv(1024)
 while(imageChunk):
     print("Receiving...")
     f.write(imageChunk)
-    imageChunk = s.recv(2048)
+    imageChunk = s.recv(1024)
 print("Done receiving image")
 s.shutdown(socket.SHUT_WR)
 s.close()  # close the socket when done
-#img = Image.open(f)
-#img.show()
 f.close()
+call(["./dekripcija.exe"])
+img = Image.open("dekriptirano.jpg")
+img.show()
+

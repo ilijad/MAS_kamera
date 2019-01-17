@@ -1,0 +1,115 @@
+#include "xparameters.h"
+#include "xiicps.h"
+#include "xil_printf.h"
+#include <stdio.h>
+#include "sleep.h"
+#include "xgpio.h"
+#include "bsp/camera.h"
+#include "xsdps.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "bsp/iic.h"
+#include "bsp/jpeg_encoder.h"
+
+#include <stdio.h>
+
+#include "xparameters.h"
+
+#include "netif/xadapter.h"
+
+#include "platform.h"
+#include "platform_config.h"
+#if defined (__arm__) || defined(__aarch64__)
+#include "xil_printf.h"
+#endif
+
+#include "lwip/tcp.h"
+#include "xil_cache.h"
+#include "xgpio.h"
+#include "ff.h"
+
+
+/* defined by each RAW mode application */
+void print_app_header();
+int start_application();
+int transfer_data();
+void tcp_fasttmr(void);
+void tcp_slowtmr(void);
+
+/* missing declaration in lwIP */
+void lwip_init();
+
+
+
+extern volatile int TcpFastTmrFlag;
+extern volatile int TcpSlowTmrFlag;
+static struct netif server_netif;
+struct netif *echo_netif;
+
+void
+print_ip(char *msg, ip_addr_t *ip)
+{
+	print(msg);
+	xil_printf("%d.%d.%d.%d\n\r", ip4_addr1(ip), ip4_addr2(ip),
+			ip4_addr3(ip), ip4_addr4(ip));
+}
+
+void
+print_ip_settings(ip_addr_t *ip, ip_addr_t *mask, ip_addr_t *gw)
+{
+
+	print_ip("Board IP: ", ip);
+	print_ip("Netmask : ", mask);
+	print_ip("Gateway : ", gw);
+}
+
+
+
+int main()
+{
+	int status=0;
+
+	status = init_gpio();
+	if (status != XST_SUCCESS) {
+		printf("GPIO initialization failed.\n");
+		return 0;
+	}
+	usleep(10000);
+
+	status = init_i2c();
+	if (status != XST_SUCCESS) {
+		printf("I2C initialization failed.\n");
+		return 0;
+	}
+	usleep(10000);
+
+	sleep(1);
+	status = init_sd(0);
+	if (status != XST_SUCCESS) {
+		printf("SD card initialization failed.\n");
+		return 0;
+	}
+	usleep(10000);
+
+	status = init_camera();
+	if (status != XST_SUCCESS) {
+		printf("Camera card initialization failed.\n");
+		return 0;
+	}
+	usleep(10000);
+
+	if(take_photo() != XST_SUCCESS){
+		printf("Failed to take image.\n");
+	}
+
+	if(TakeJPG() != XST_SUCCESS){
+		printf("Failed to take image.\n");
+	}
+
+	printf("Complete\n\r");
+
+	XGpio_DiscreteSet(&led_btns, 2, 0x00);
+
+	return 0;
+}
+

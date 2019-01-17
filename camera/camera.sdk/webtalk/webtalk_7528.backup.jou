@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# 
+# Start of session at: Sun Dec 23 23:01:02 2018
+# Process ID: 7528
+# Current directory: C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk/webtalk/webtalk.log
+# Journal file: C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

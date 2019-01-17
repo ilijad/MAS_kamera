@@ -222,11 +222,16 @@ def getImage(url):
 
 def openClient(imageName):
     s = socket.socket()  # create a socket object
-    host = socket.gethostname()  # get local machine name
-    port = 12345  # reserve a port for your service.
+    TCP_IP = '192.168.1.10'
+    host= TCP_IP
+    port = 7
+    TCP_PORT = 7
+    BUFFER_SIZE = 1024
+    MESSAGE = b"PHOTO.JPG"
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    s.connect((host, port))
-    s.send(str(imageName).encode())
+    s.connect((TCP_IP, TCP_PORT))
+    s.send(MESSAGE)
     print("Sending...")
     f = io.BytesIO()
     imageChunk = s.recv(1024)

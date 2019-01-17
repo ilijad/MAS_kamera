@@ -13,8 +13,9 @@
 static FIL fil;
 static char *SD_Pic;
 
-static char PicName[32] = "photo.jpg";
+static char PicName[32] = "photo.yuv";
 
 int TakeJPG();
+int TakeJPG_(u8 *came);
 
 #endif /* SRC_JPEG_ENCODER_H_ */

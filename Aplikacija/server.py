@@ -5,6 +5,7 @@ import socket
 
 s = socket.socket()  # create a socket object
 host = socket.gethostname()  # get local machine name
+print(host)
 port = 12345  # reserve a port for your service.
 s.bind((host, port))  # bind to the port
 s.listen(5)  # wait for client connection.

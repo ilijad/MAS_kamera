@@ -18,4 +18,5 @@ ELFSIZE :=
 SUBDIRS := \
 src/bsp \
 src \
+src/server \
 

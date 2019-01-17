@@ -233,7 +233,7 @@ int jo_write_jpg( const void *data, int width, int height, int comp, int quality
 
 
 	SD_Pic = (char *)PicName;
-	f_open(&fil, SD_Pic, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	f_open(&fil, SD_Pic, FA_OPEN_ALWAYS | FA_WRITE | FA_READ);
 
 
 
@@ -348,7 +348,7 @@ int jo_write_jpg( const void *data, int width, int height, int comp, int quality
 int TakeJPG()
 {
 	FIL f;
-	char pic[32]="photo.yuv";
+	char pic[32]="PHOTO.YUV";
 	UINT bytes_read;
 	FRESULT status;
 	SD_Pic= (char *)pic;
@@ -358,9 +358,17 @@ int TakeJPG()
 	}
 
 	f_read(&f, (void *) image, 912600, &bytes_read);
-
+	f_write(&f, (void *) pic, 1, &bytes_read);
+	f_close(&f);
 	jo_write_jpg(image, 640, 480, 3, 100);
 
 	return XST_SUCCESS;
 }
 
+int TakeJPG_(u8 *came)
+{
+
+	jo_write_jpg(came, 640, 480, 3, 100);
+
+	return XST_SUCCESS;
+}

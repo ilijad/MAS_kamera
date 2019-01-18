@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Wed Dec 19 01:30:42 2018
+# Process ID: 13984
+# Current directory: C:/Programiranje/ProgramiMAS/Projekt/camera
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18988 C:\Programiranje\ProgramiMAS\Projekt\camera\camera.xpr
+# Log file: C:/Programiranje/ProgramiMAS/Projekt/camera/vivado.log
+# Journal file: C:/Programiranje/ProgramiMAS/Projekt/camera\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Programiranje/ProgramiMAS/Projekt/camera/camera.xpr
+update_compile_order -fileset sources_1
+file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk -hwspec C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {10}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {8} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {38.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {118.750} CONFIG.CLKOUT1_JITTER {365.761} CONFIG.CLKOUT1_PHASE_ERROR {242.819}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+startgroup
+endgroup
+validate_bd_design
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1] [get_bd_ports XCLK]
+startgroup
+make_bd_pins_external  [get_bd_pins clk_wiz_0/clk_out1]
+endgroup
+set_property name XCLK [get_bd_ports clk_out1_0]
+validate_bd_design
+generate_target all [get_files  C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Programiranje/ProgramiMAS/Projekt/camera/camera.ip_user_files/sim_scripts -ip_user_files_dir C:/Programiranje/ProgramiMAS/Projekt/camera/camera.ip_user_files -ipstatic_source_dir C:/Programiranje/ProgramiMAS/Projekt/camera/camera.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Programiranje/ProgramiMAS/Projekt/camera/camera.cache/compile_simlib/modelsim} {questa=C:/Programiranje/ProgramiMAS/Projekt/camera/camera.cache/compile_simlib/questa} {riviera=C:/Programiranje/ProgramiMAS/Projekt/camera/camera.cache/compile_simlib/riviera} {activehdl=C:/Programiranje/ProgramiMAS/Projekt/camera/camera.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf
+
+launch_simulation -mode post-synthesis -type functional
+source design_1_wrapper.tcl
+open_bd_design {C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_1]
+endgroup
+generate_target all [get_files  C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Programiranje/ProgramiMAS/Projekt/camera/camera.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Programiranje/ProgramiMAS/Projekt/camera/camera.ip_user_files/sim_scripts -ip_user_files_dir C:/Programiranje/ProgramiMAS/Projekt/camera/camera.ip_user_files -ipstatic_source_dir C:/Programiranje/ProgramiMAS/Projekt/camera/camera.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Programiranje/ProgramiMAS/Projekt/camera/camera.cache/compile_simlib/modelsim} {questa=C:/Programiranje/ProgramiMAS/Projekt/camera/camera.cache/compile_simlib/questa} {riviera=C:/Programiranje/ProgramiMAS/Projekt/camera/camera.cache/compile_simlib/riviera} {activehdl=C:/Programiranje/ProgramiMAS/Projekt/camera/camera.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Programiranje/ProgramiMAS/Projekt/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/camera/camera.sdk/design_1_wrapper.hdf
+
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type functional
+source design_1_wrapper.tcl

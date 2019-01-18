@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Fri Jan 18 15:57:25 2019
+# Process ID: 10912
+# Current directory: C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8776 C:\Programiranje\ProgramiMAS\Projekt\MAS_kamera\camera\camera.xpr
+# Log file: C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/vivado.log
+# Journal file: C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk -hwspec C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk/design_1_wrapper.hdf
+file copy -force C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk/design_1_wrapper.hdf
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_sdk -workspace C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk -hwspec C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk/design_1_wrapper.hdf
+file copy -force C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.runs/impl_1/design_1_wrapper.sysdef C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk/design_1_wrapper.hdf
+

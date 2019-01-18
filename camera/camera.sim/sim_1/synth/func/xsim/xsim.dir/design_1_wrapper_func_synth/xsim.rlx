@@ -1,0 +1,12 @@
+
+{ 
+    crc :  935735487062161904  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto cd3dc53e751d4cc28490f63dc1d5f239 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L secureip --snapshot design_1_wrapper_func_synth xil_defaultlib.design_1_wrapper xil_defaultlib.glbl" , 
+    buildDate : "Oct  1 2018" , 
+    buildTime : "20:13:33" , 
+    linkCmd : "D:\\Xilinx\\Vivado\\2018.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/design_1_wrapper_func_synth/xsimk.exe\"   \"xsim.dir/design_1_wrapper_func_synth/obj/xsim_0.win64.obj\" \"xsim.dir/design_1_wrapper_func_synth/obj/xsim_1.win64.obj\" \"xsim.dir/design_1_wrapper_func_synth/obj/xsim_2.win64.obj\" \"xsim.dir/design_1_wrapper_func_synth/obj/xsim_3.win64.obj\" \"xsim.dir/design_1_wrapper_func_synth/obj/xsim_4.win64.obj\" \"D:\\Xilinx\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"D:\\Xilinx\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

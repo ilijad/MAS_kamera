@@ -43,11 +43,11 @@ class PhotoViewer(wx.Frame):
 
     def onAbout(self, event):
         aboutMessage = "MAS projekt 2018./2019.\n \
-                        \nAutori:\n \
-                        Ilija Domislović\n \
-                        Petar Grekšić\n \
-                        Nikola Ugarković\n \
-                        Luka Kudra"
+                        \nAutori: \
+                        \nIlija Domislović \
+                        \nPetar Grekšić \
+                        \nNikola Ugarković \
+                        \nLuka Kudra"
         msgBox = wx.MessageDialog(None, message=aboutMessage,
                                   caption='About',
                                   style=wx.ICON_INFORMATION | wx.STAY_ON_TOP | wx.OK)

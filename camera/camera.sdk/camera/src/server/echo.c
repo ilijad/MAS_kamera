@@ -44,6 +44,7 @@
 #include "../bsp/camera.h"
 #include "../bsp/iic.h"
 #include "../bsp/jpeg_encoder.h"
+#include "../encryption/enkripcija.h"
 #include "platform.h"
 #include "platform_config.h"
 
@@ -94,6 +95,8 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err)
 			tcp_write(tpcb, (void*) er, sizeof(er), 1);
 			return ERR_OK;
 		}
+		encrypt();
+
 		platform_enable_interrupts();
 		//asm(" cpsid  F");
 	}

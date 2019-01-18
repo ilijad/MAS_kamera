@@ -12,5 +12,4 @@ rst -processor
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
 dow C:/Programiranje/ProgramiMAS/Projekt/MAS_kamera/camera/camera.sdk/camera/Debug/camera.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
-con
+bpadd -addr &main

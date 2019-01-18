@@ -233,7 +233,7 @@ int jo_write_jpg( const void *data, int width, int height, int comp, int quality
 
 
 	SD_Pic = (char *)PicName;
-	f_open(&fil, SD_Pic, FA_OPEN_ALWAYS | FA_WRITE | FA_READ);
+	f_open(&fil, SD_Pic, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
 
 
 
